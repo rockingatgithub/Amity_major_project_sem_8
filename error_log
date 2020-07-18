@@ -1,0 +1,2 @@
+[26-Apr-2020 09:18:51 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/xmi61xlbv0mw/public_html/hello/esp-data.php on line 70
+[26-Apr-2020 09:19:17 UTC] PHP Warning:  mysqli::__construct(): (28000/1045): Access denied for user 'root'@'localhost' (using password: NO) in /home/xmi61xlbv0mw/public_html/hello/esp-data.php on line 70

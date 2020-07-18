@@ -1,0 +1,169 @@
+<html>
+    <head >
+        <link rel = "stylesheet" href = "css/home.css"/>
+    </head>
+    <body  style="background-image: url('img/home.JPG');background-repeat: no-repeat;    background-size: 2000px 1500px;"  > 
+		<style>
+
+* {
+	box-sizing:border-box;
+}
+.zone::after	{
+	content:" ";
+	display:block;
+	clear:both;
+	border-style: solid;
+	padding:20px;
+}
+.name	{
+	font-size: 50px;
+	font-style:italic;
+	text-align: center;
+}
+.zone2	{
+	padding:0px;
+	height:auto;
+	border-style: solid;
+	 border-color:transparent;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 8px;
+ 
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.photo	{
+	width: 100%;
+    height: 100%;
+    float: right;
+    display: inline-block;
+	border-style: solid;
+}
+
+.topnav {
+	overflow: hidden;
+	background-color: black;
+	
+	
+}
+.topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+.topnav a.active {
+	background-color: #131212;
+	color:#f1d723;
+}
+.footer	{
+	background-color: #1da79a;
+}
+
+#grid {
+  display: grid;
+  height: 80px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 80px;
+  column-gap: 20px;
+  font-size: 20px;
+}
+
+#grid > div {
+  border: 5px solid black;
+  background-color: #99b7e8 ;
+}
+
+ 
+
+.fling-minislide {width:250px; height:300px; overflow:hidden; position:center;padding:45px;}
+.fling-minislide img{ position:absolute; animation:fling-minislide 30s infinite; opacity:0; width: 95%; height: 95%;}
+
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
+.fling-minislide img:nth-child(6){animation-delay:0s;}
+.fling-minislide img:nth-child(5){animation-delay:5s;}
+.fling-minislide img:nth-child(4){animation-delay:10s;}
+.fling-minislide img:nth-child(3){animation-delay:15s;}
+.fling-minislide img:nth-child(2){animation-delay:20s;}
+.fling-minislide img:nth-child(1){animation-delay:25s;}
+
+		</style>
+		
+        <div class = "header">
+            <div class = "name">
+                        <b style="color:black" align = "center" >Health-Care Monitoring Dashboard for Asymptomatic Patients</b>
+                       
+            </div>
+             <h1 style="color:black" align = "center"  >Monitoring Patients Health From a Distance</h1>
+			<br>
+        </div>
+        <div class="topnav">
+            <a class="active" href="#home">Home</a>
+            <a href="esp-data.php" target="_blank">Readings</a>
+            <a href="graph.html" target="_blank">Graph</a>
+            <a href="about.html" target="_blank">About</a>
+	</div>
+	 <div class = "zone2">
+<div class="row">
+  <div class="column">
+    <img src="img/2.gif" alt="corona" style="width:100%"  > 
+  </div>
+  <div class="column">
+    <img  src="img/1.gif" alt="measures" style="width:100%"  > 
+  </div>
+  <div class="column">
+    <img src="img/3.gif" alt="healing" style="width:100%" >
+  </div>
+</div>
+<br></br>
+     <div id="grid">
+  <div><p style = "text-align: center" "font-size: 25px" ;><b>Infected Earth (COVID-19)</b></p></div>
+  <div><p style = "text-align: center" "font-size: 25px"  ;><b>Measures Taken for Healing </b></p></div>
+  <div><p style = "text-align: center" "font-size: 25px" ;><b>Healing Earth</b></p></div>
+</div>   
+
+       
+        	
+            	
+				
+				<br></br>
+				<p></p>
+				<div class="fling-minislide">
+	<img src="img/hoca.jpeg" alt=" Slide 6" border="50" />	
+	<img src="img/all.jpeg" alt=" Slide 5" border="100" />			    
+    <img src="img/us.jpeg" alt=" Slide 4" border="50"    />
+    <img src="img/sensors 2.jpeg" alt="Slide 3"border="50" />
+    <img src="img/sensors 1.jpeg" alt="Slide 2"  border="50"/>
+    <img src="img/disease.JPG" alt="Slide 1" border="50" />
+    <br></br>
+    <p>.</p>
+</div>
+				
+				
+        </div>
+
+        
+        
+
+    </body>
+</html>

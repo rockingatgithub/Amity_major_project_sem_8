@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+ <meta http-equiv="refresh" content="15">
+<html lang="en">
+    <style>
+        a:link {
+  text-decoration: none;
+  background-color: yellow;
+}
+
+a:visited {
+  text-decoration: none;
+    background-color: cyan;
+}
+
+a:hover {
+  text-decoration: underline;
+  background-color: lightgreen;
+}
+
+a:active {
+  text-decoration: underline;
+    background-color: hotpink;
+}
+    </style>
+    <head >
+	  <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+     
+       <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.bundle.min.js"></script>
+      <title>Graph</title>
+        
+		<script>
+
+		</script>
+    </head>
+    <body style =" background-color: #1d1d1d";  >
+    <center>
+        <h1 style="font-family: Helvetica;color: white;">Health-Care Monitoring For Quarantine patients(Covid -19)</h1>
+	</center>
+	
+	<h3 style="font-family: Helvetica;color: white;" >Timezone with GMT +05:30</h3>
+        <a href="http://indocorpolex.com/hello/home.html">Go Back to Home Page</a>
+   <br><br>
+   <a href="http://indocorpolex.com/hello/esp-data.php">Click Here For Readings!</a>
+	<br>
+	<h5 style="font-family: Helvetica;color: white;" id="loading">
+		Graph is loading....
+	</h5>
+	
+	<div id="graph" style="display: none">
+		<h3 id="date"></h3>
+		<h2 id="current_data_length"></h2>
+		<div style="font-family: Helvetica;color: white;">
+			Click here to generate all time data for download: 
+			<button id="generate">Generate</button>
+		</div>
+		<div id="download-div" style="display: none">
+			<a href="#" id="download">Click here to save(.txt)</a> <br>
+			<a href="#" id="download_json">Click here to save(.json)</a>
+		</div>
+		<canvas id="moisture"></canvas>
+		<br><br><br>
+		<canvas id="ph"></canvas>
+		<br><br><br>
+		<canvas id="temperature"></canvas>
+		<br><br><br>
+		<canvas id="lux"></canvas>
+	</div>
+	
+
+    </body>
+
+	<script src="./graph.js"></script>
+</html>
